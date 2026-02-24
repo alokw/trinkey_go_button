@@ -27,7 +27,13 @@ void loop() {
       strip.setBrightness(255);
       strip.show();
     } else {
+      
+      // use this for d3 / .
       Keyboard.write(HID_KEYBOARD_PERIOD_AND_GREATER_THAN);
+
+      // use this for pixera / spacebar
+      //Keyboard.write(' ');
+
       // Serial.println("Released");
       strip.setBrightness(neo_brightness);
       strip.setPixelColor(0,red);
